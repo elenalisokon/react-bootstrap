@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+body {
+  background: #160A46;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background: rgb(0,0,0, 0.5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-link {
+  color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.input-search {
+  background: rgb(255,255,255, 0.2);
+}
+
+.input-search::placeholder {
+  color: #fff;
+}
+
+.intro-block {
+  position: relative;
+  padding: 250px 0 100px;
+}
+
+.carousel-item {
+  height: 300px;
+}
+.carousel-caption {
+  max-width: 600px;
+  margin: 0 auto;
+  bottom: auto;
+  top: 10%;
+}
+.carousel-caption h2 {
+  text-shadow: 0 0 1px rgb(0,0,0, 0.5);
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+}
+
+.intro-video {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background: transparent url(../src/img/bg-section.png) no-repeat 50% 0;
+  background-size: cover;
+}
+
+.intro-video video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  
+}
+
+.section-about {
+  padding: 50px 0;
+}
+
+.section-about .container {
+  max-width: 700px;
+}
+
+.section-team {
+  padding: 50px 0;
+  background: url(./img/bg1.jpg) no-repeat 50% 100%;
+}
+
+.section-portfolio .card,
+.section-team .card {
+  padding: 20px;
+  border: 0;
+  background: none;
+  color: #fff;
+  border-radius: none;
+}
+
+.section-team .card-body {
+  padding: 0;
+}
+
+.section-team-image {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.section-portfolio {
+  padding: 50px 0;
+}
+
+.section-portfolio-image {
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.section-portfolio .card {
+  padding: 0 50px;
+}
+
+.section-contact {
+  padding: 50px 0;
+  background: url(./img/bg2.jpg) no-repeat 50% 100%;
+}
+
+.contact-info {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  flex-direction: column;
+} 
+
+.contact-info h2 {
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-info a{
+  color: #fff;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact-info a:hover {
+  opacity: 0.85;
+}
+
+.footer {
+  padding: 20px 0;
+}
+
+
+@media screen and (max-width: 1279px) {
+  .intro-block {
+    padding: 85px 0 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .intro-video video {
+    width: auto;
+    top: auto;
+    bottom: 0;
+  }
+
+  .carousel {
+    background: rgb(0,0,0, 0.5);
+  }
+
+  .carousel-caption {
+    top: 1%;
   }
 }
+
+@media screen and (max-width: 899px) {
+
+
+  
+}
+
